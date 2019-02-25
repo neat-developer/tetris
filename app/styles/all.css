@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #0e0e0e;
+  font-family: 'Roboto', sans-serif; }
+
+.text-center {
+  text-align: center; }
+
+#game {
+  border: 1px solid #eee;
+  margin-top: 50px;
+  background: url("../image/background.png"); }
