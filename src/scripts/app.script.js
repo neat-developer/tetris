@@ -42,11 +42,13 @@ class Tetris {
                 let y = this.positions.aria.y + j * this.boxSize;
                 this.ctx.strokeStyle = this.colors.grid;
                 this.ctx.strokeRect(x, y, this.boxSize, this.boxSize);
-                (this.store[storeKey] !== undefined) && this.drawBox(x, y, this.store[storeKey]);
+                (storeKey in this.store) && this.drawBox(x, y, this.store[storeKey]);
             }
         }
     }
 
+
+    
     /**
      * Draw cube in Aria by x, y, color
      */
